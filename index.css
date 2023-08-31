@@ -1,0 +1,166 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo del documento */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f6e8;
+    /* Fondo más cálido */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 230, 109, 0.9);
+    /* Amarillo suave */
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de la sección de perfil */
+.profile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffaa5c;
+    /* Naranja suave */
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.location,
+.contact,
+.age {
+    font-size: 14px;
+    color: #f0f0f0;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    color: #ffca82;
+    /* Naranja más claro */
+}
+
+/* Estilos para las secciones */
+.content {
+    flex: 2;
+    padding: 10px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+/* Estilos para los títulos de sección */
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para la lista de habilidades */
+.skills {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.progress {
+    background-color: #eee;
+    height: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: #ffaa5c;
+    /* Naranja suave */
+    color: #fff;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Estilos para las listas */
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Estilos para los iconos de certificaciones y hobbies */
+.certification-list i,
+.hobbies-list i {
+    margin-right: 5px;
+    color: #4CAF50;
+}
+
+/* Media query para dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .profile,
+    .content {
+        padding: 15px;
+    }
+}
